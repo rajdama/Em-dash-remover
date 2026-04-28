@@ -1,3 +1,4 @@
+<img width="1092" height="786" alt="image" src="https://github.com/user-attachments/assets/85372cd0-4299-46b7-a332-634bd7ab1d39" />
 # Em Dash Cleaner
 
 A tiny Chrome extension that strips em dashes ( ) from any input field on any website. Built for cleaning up LLM output (ChatGPT, Claude, Gemini) before you paste or send it.
