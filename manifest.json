@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Em Dash Cleaner",
+  "version": "1.0.0",
+  "description": "Removes em dashes from any input field on any site. Type /clear-emdash in the field, or press the keyboard shortcut.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Em Dash Cleaner"
+  },
+  "commands": {
+    "clear-emdash": {
+      "suggested_key": {
+        "default": "Alt+Shift+E",
+        "mac": "Alt+Shift+E"
+      },
+      "description": "Remove em dashes from focused input"
+    }
+  }
+}
