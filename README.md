@@ -1,6 +1,6 @@
 # Em Dash Cleaner
 
-A tiny Chrome extension that strips em dashes (—) from any input field on any website. Built for cleaning up LLM output (ChatGPT, Claude, Gemini) before you paste or send it.
+A tiny Chrome extension that strips em dashes ( ) from any input field on any website. Built for cleaning up LLM output (ChatGPT, Claude, Gemini) before you paste or send it.
 
 ## How to use
 
@@ -13,7 +13,7 @@ Two ways to trigger it inside any input, textarea, or chat box:
 
 A small toast confirms when it ran.
 
-## Install (developer mode — until you publish to the Web Store)
+## Install (developer mode until you publish to the Web Store)
 
 1. Open `chrome://extensions` in Chrome (or any Chromium browser: Edge, Brave, Arc).
 2. Toggle **Developer mode** on (top right).
@@ -25,7 +25,7 @@ A small toast confirms when it ran.
 
 - **Replacement style**: remove, hyphen `-`, comma+space `, `, or spaced hyphen ` - `.
 - **Also clean en dashes (–)**: off by default; turn on if you also want `–` cleaned.
-- **Auto-replace as I type**: removes em dashes the moment you type or paste them — no command needed.
+- **Auto-replace as I type**: removes em dashes the moment you type or paste them no command needed.
 - **Show confirmation toast**: small bottom-of-screen notification when it fires.
 
 ## Where it works
@@ -34,11 +34,11 @@ A small toast confirms when it ran.
 - ContentEditable rich editors (ChatGPT, Claude.ai, Gemini, most chat UIs)
 - Inside iframes (e.g. embedded composers)
 
-It does NOT touch page text outside of input fields — only what you're actively editing.
+It does NOT touch page text outside of input fields only what you're actively editing.
 
 ## Files
 
-- `manifest.json` — Manifest V3 config + keyboard command
-- `content.js` — listens on every page, watches inputs for the trigger, performs the replacement
-- `background.js` — receives the keyboard shortcut and forwards it to the active tab
-- `popup.html` / `popup.js` / `popup.css` — settings panel
+- `manifest.json` Manifest V3 config + keyboard command
+- `content.js` listens on every page, watches inputs for the trigger, performs the replacement
+- `background.js` receives the keyboard shortcut and forwards it to the active tab
+- `popup.html` / `popup.js` / `popup.css` settings panel
